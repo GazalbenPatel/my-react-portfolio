@@ -12,7 +12,7 @@ const UserHeader = ({ user }) => {
       <Header>
         <Image src={user.basics.picture} />
         <div>
-          <h2>{user.basics.name}</h2>
+          <h2>Gazal</h2>
           <h4>
             <a
               href={`https://gitconnected.com/v1/portfolio/gazalpatel`}
@@ -23,11 +23,11 @@ const UserHeader = ({ user }) => {
             </a>
           </h4>
           <p>{user.basics.label}</p>
-          <p>Coding in {user.basics.region}</p>
+          <p>Coding in Canada</p>
           <p>
-            {user.basics.yearsOfExperience} years of experience as a developer
+            {5} years of experience as a developer
           </p>
-          <p>{user.basics.headline}</p>
+          <p>Love to do Coding</p>
           <p>
             Blog:{" "}
             <a
@@ -42,7 +42,7 @@ const UserHeader = ({ user }) => {
       </Header>
       <div>
         <ViewResumeLink
-          href={`https://gitconnected.com/${user.basics.username}/resume`}
+          href={`https://gitconnected.com/v1/portfolio/gazalbenpatel/resume`}
           target="_blank"
           rel="noopener noreferrer"
         >
