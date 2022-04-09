@@ -8,13 +8,13 @@ const Me = ({ user }) => {
     <Layout user={user}>
       <div>
         <SectionTitle>About Me</SectionTitle>
-        <Paragraph>{user.basics.summary}</Paragraph>
+        <Paragraph>I live in Canada from last 6 years with my Family. I'm the Software developer from 2012 because From back-home I did study in Bachelors of Computer Applications</Paragraph>
       </div>
       <div>
         <SectionTitle>Skills</SectionTitle>
         <div>
           {user.skills.map((skill) => (
-            <Pill key={skill.name}>{skill.name}</Pill>
+            <Pill key={skill.name}>java, SQL, Front-end Developer, .Net core, Asp .Net core, etc...</Pill>
           ))}
         </div>
       </div>

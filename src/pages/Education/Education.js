@@ -11,14 +11,14 @@ const Education = ({ user }) => {
         <ul>
           {user.education.map((education, i) => (
             <EducationItem key={i}>
-              <Institution>{education.position}</Institution>
+              <Institution>Software Developer</Institution>
               <div>
                 <Degree>
-                  {education.studyType}, {education.area}
+                  Full Stack Web Developer, Winnipeg,MB
                 </Degree>{" "}
                 <span> &sdot; </span>
                 <span>
-                  {education.start.year} to {education.end.year}
+                  july 2021 to April 2022
                 </span>
               </div>
               <Paragraph>
