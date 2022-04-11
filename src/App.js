@@ -1,22 +1,18 @@
-import React, { useState, useEffect } from "react";
-import Pages from "./pages";
+import './App.scss';
+import Education from './pages/Education';
+import Me from './pages/Me';
+import Projects from './pages/Projects';
+import Work from './pages/Work';
 
 function App() {
-  const [user, setUser] = useState(null);
-  useEffect(() => {
-    // NOTE: Use your username below
-    fetch("https://gitconnected.com/v1/portfolio/gazalpatel")
-      .then((res) => res.json())
-      .then((user) => {
-        setUser(user);
-      });
-  }, []);
-
-  if (!user) {
-    return <div />;
-  }
-
-  return <Pages user={user} />;
+  return (
+    <div className="App">
+      <Education/>
+      <Me/>
+      <Projects/>
+      <Work/>
+    </div>
+  );
 }
 
 export default App;
